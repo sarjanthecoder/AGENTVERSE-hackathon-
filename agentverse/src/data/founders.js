@@ -1,0 +1,38 @@
+export const founders = [
+  {
+    name: 'SARJAN',
+    role: 'Founder & CEO',
+    skills: ['Full Stack Development', 'AI/ML', 'Cloud Architecture', 'System Design'],
+    quote: '"Innovation is not about ideas. It\'s about making ideas happen."',
+    bio: 'Visionary tech leader with a passion for building platforms that empower the next generation of innovators.',
+    social: { github: 'https://github.com/sarjanthecoder', linkedin: 'https://www.linkedin.com/in/sarjanp/', portfolio: 'https://www.sarjanp.in', instagram: 'https://www.instagram.com/sarjanp/' },
+    color: 'sky',
+  },
+  {
+    name: 'KARTHICK KUMAR',
+    role: 'Co-Founder & CTO',
+    skills: ['Cyber Security', 'Blockchain', 'DevOps', 'Backend Engineering'],
+    quote: '"The best way to predict the future is to build it."',
+    bio: 'Security-first engineer who architects robust, scalable systems that stand the test of time.',
+    social: { github: 'https://github.com/veerakarthick235', linkedin: 'https://www.linkedin.com/in/karthickkumar-s-b04a10348', portfolio: 'https://www.veerakarthick.in/', instagram: 'https://www.instagram.com/veerakarthick_235/' },
+    color: 'purple',
+  },
+  {
+    name: 'LOKESH',
+    role: 'Co-Founder & COO',
+    skills: ['Project Management', 'UI/UX Design', 'Community Building', 'Marketing'],
+    quote: '"Great things are built by teams, not individuals."',
+    bio: 'Operations mastermind who transforms ambitious visions into flawlessly executed events.',
+    social: { github: 'https://github.com/lokeshloki65', linkedin: 'https://www.linkedin.com/in/lokesh-m-265b832b3/', portfolio: 'https://www.lokeshloki.in', instagram: 'https://www.instagram.com/lokeshloki.in/' },
+    color: 'pink',
+  },
+  {
+    name: 'NISHANTH',
+    role: 'Co-Founder & CDO',
+    skills: ['Creative Design', 'Motion Graphics', 'Brand Strategy', 'Frontend Development'],
+    quote: '"Design is intelligence made visible."',
+    bio: 'Creative visionary who crafts stunning digital experiences that captivate and inspire.',
+    social: { github: 'https://github.com/NishanthKarthikeyan', linkedin: 'https://www.linkedin.com/in/nishanthkhosur/', portfolio: 'https://nishanthk.site', instagram: 'https://www.instagram.com/__.nichu_xd.__/' },
+    color: 'blue',
+  },
+];

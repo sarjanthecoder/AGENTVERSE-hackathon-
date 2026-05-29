@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-cyber-darker: #000d1a;
+  --color-cyber-dark:   #001a2e;
+  --color-cyber-deep:   #002244;
+  --color-cyber-mid:    #003366;
+  --color-neon-sky:     #00c8ff;
+  --color-neon-blue:    #0080ff;
+  --color-neon-cyan:    #00f5ff;
+  --color-neon-purple:  #a855f7;
+  --color-neon-pink:    #ff00aa;
+  --color-neon-green:   #00ff88;
+  --color-neon-yellow:  #ffdd00;
+  --color-neon-orange:  #ff6600;
+  --color-glass-border: rgba(0, 200, 255, 0.15);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-cyber-darker);
+  overflow-x: hidden;
+}
+
+/* Utilities */
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 10px var(--color-neon-sky), 0 0 30px var(--color-neon-sky);
+  }
+  
+  .text-gradient {
+    background: linear-gradient(135deg, var(--color-neon-sky), var(--color-neon-purple), var(--color-neon-pink));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .glass-panel {
+    background: rgba(0, 13, 26, 0.6);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--color-glass-border);
+  }
+
+  .glass-panel-hover:hover {
+    border-color: rgba(0, 200, 255, 0.5);
+    box-shadow: 0 0 20px rgba(0, 200, 255, 0.4), 0 0 60px rgba(0, 200, 255, 0.1);
+    transform: translateY(-4px);
+  }
+
+  .glow-box {
+    box-shadow: 0 0 20px rgba(0, 200, 255, 0.4), 0 0 60px rgba(0, 200, 255, 0.1);
+  }
+
+  /* Scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--color-cyber-darker);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-cyber-mid);
+    border-radius: 999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-neon-sky);
+  }
+}
