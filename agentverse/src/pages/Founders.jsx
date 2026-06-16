@@ -4,12 +4,6 @@ import { Github, Linkedin, Globe, Instagram } from 'lucide-react';
 import { GlassCard } from '../components/ui/GlassCard';
 import { founders } from '../data/founders';
 
-// Import newly generated premium cyberpunk avatars
-import sarjanImg from '../assets/founders/sarjan.png';
-import karthickImg from '../assets/founders/karthick.png';
-import lokeshImg from '../assets/founders/lokesh.png';
-import nishanthImg from '../assets/founders/nishanth.png';
-
 const socialIcons = [
   { key: 'github', Icon: Github },
   { key: 'linkedin', Icon: Linkedin },
@@ -17,11 +11,10 @@ const socialIcons = [
   { key: 'instagram', Icon: Instagram },
 ];
 
-const imageMap = {
-  'SARJAN': sarjanImg,
-  'KARTHICK KUMAR': karthickImg,
-  'LOKESH': lokeshImg,
-  'NISHANTH': nishanthImg,
+const getGithubAvatar = (githubUrl) => {
+  if (!githubUrl) return '';
+  const username = githubUrl.replace(/\/$/, '').split('/').pop();
+  return `https://github.com/${username}.png`;
 };
 
 const Founders = () => {
@@ -50,7 +43,7 @@ const Founders = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
         {founders.map((founder, idx) => {
           const themeColor = colorMap[founder.color];
-          const avatarImg = imageMap[founder.name];
+          const avatarImg = getGithubAvatar(founder.social.github);
           
           return (
             <motion.div 
